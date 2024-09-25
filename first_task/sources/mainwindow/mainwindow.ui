@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>640</width>
+          <height>480</height>
+        </rect>
+      </property>
+      <property name="windowTitle">
+        <string>MainWindow</string>
+      </property>
+      
+      <widget class="QWidget" name="layoutWidget">
+      <layout class="QVBoxLayout" name="myLayout">
+        
+      <item>
+        <widget class="QPushButton" name="YoButton">
+          <property name="text">
+            <string>stariy_bog</string>
+          </property>
+        </widget>
+      </item>
+      
+      <item>
+        <widget class="QTextEdit" name="inputTextField">
+            
+        </widget>
+      </item>
+
+      <item>
+        <widget class="QPushButton" name="SubmitButton">
+          <property name="text">
+            <string>Send text down</string>
+          </property>
+        </widget>
+      </item>
+
+      <item>
+        <widget class="QTextEdit" name="outputTextField">
+          <property name="ReadOnly">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+
+      <item>
+        <widget class="QPushButton" name="CheckBoxButton">
+          <property name="text">
+            <string>Push me before send data</string>
+          </property>
+        </widget>
+      </item>
+
+    </layout>
+    </widget>
+
+  </widget>
+</ui>
+

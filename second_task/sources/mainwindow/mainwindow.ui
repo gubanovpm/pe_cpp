@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>Application::MainWindow</class>
+  <widget class="QMainWindow" name="MainWindow">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>640</width>
+        <height>480</height>
+      </rect>
+    </property>
+    
+    <action name="ActionClose">
+      <property name="text">
+        <string>Close</string>
+      </property>
+      <property name="shortcut">
+        <string>Ctrl+Q</string>
+      </property>
+      <property name="menuRole">
+        <enum>QAction::QuitRole</enum>
+      </property>
+    </action>
+
+    <widget class="QMenuBar" name="MenuBar">
+      <widget class="QMenu" name="menuMouseWindow">
+        <property name="title">
+          <string>Mouse Window</string>
+        </property>
+        <addaction name="openMouseWindow"/>
+      </widget>
+      <action name="openMouseWindow">
+        <property name="text">
+          <string>Open</string>
+        </property>
+      </action>
+
+      <widget class="QMenu" name="menuDrawWindow">
+        <property name="title">
+          <string>Draw Window</string>
+        </property>
+        <addaction name="openDrawWindow"/>
+        <action name="openDrawWindow">
+          <property name="text">
+            <string>Open</string>
+          </property>
+        </action>
+      </widget>
+
+      <addaction name="menuMouseWindow"/>
+      <addaction name="menuDrawWindow"/>
+    </widget>
+
+    <widget class="QStackedWidget" name="SwitchLayout"/>
+
+  </widget>
+</ui>

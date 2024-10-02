@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>Application::MouseWindow</class>
+  <widget class="QWidget" name="MouseWindow">
+    <layout class="QGridLayout" name="TextLayout">
+		<item row="1" column="0">
+		<widget class="QLabel" name="rtposition_name">
+			<property name="text">
+				<string>IRT: </string>
+			</property>
+			<property name="alignment">
+				<set>Qt::AlignmentFlag::AlignRight | Qt::AlignmentFlag::AlignVCenter</set>
+			</property>
+		</widget>
+		</item>
+		<item row="1" column="1">
+		<widget class="QLabel" name="rtposition">
+			<property name="text">
+				<string>HHHH</string>
+			</property>
+			<property name="alignment">
+				<set>Qt::AlignmentFlag::AlignLeft | Qt::AlignmentFlag::AlignVCenter</set>
+			</property>
+		</widget>
+		</item>
+		<item row="2" column="0">
+		<widget class="QLabel" name="clickedposition_name">
+			<property name="text">
+				<string>Clicked: </string>
+			</property>
+			<property name="alignment">
+				<set>Qt::AlignmentFlag::AlignRight | Qt::AlignmentFlag::AlignVCenter</set>
+			</property>
+		</widget>
+		</item>
+		<item row="2" column="1">
+		<widget class="QLabel" name="clickedposition">
+			<property name="text">
+				<string>HHHH</string>
+			</property>
+			<property name="alignment">
+				<set>Qt::AlignmentFlag::AlignLeft | Qt::AlignmentFlag::AlignVCenter</set>
+			</property>
+		</widget>
+		</item>
+		</layout>
+  </widget>
+</ui>
